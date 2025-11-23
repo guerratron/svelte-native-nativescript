@@ -1,53 +1,27 @@
 {
-  "name": "svelte-native-nativescript-ui",
+  "name": "svelte-erp",
+  "main": "app/app.ts",
   "version": "1.0.0",
-  "description": "Svelte Native support for Nativescript UI",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/halfnelson/svelte-native-nativescript-ui.git"
-  },
-  "keywords": [
-    "sveltejs",
-    "nativescript",
-    "nativescript-ui",
-    "svelte-native"
-  ],
   "private": true,
-  "author": "David Pershouse",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/halfnelson/svelte-native-nativescript-ui/issues"
-  },
-  "homepage": "https://github.com/halfnelson/svelte-native-nativescript-ui#readme",
-  "peerDependencies": {
-    "@nativescript/core": "~8.1.5",
-    "svelte-native": "~1.0.0"
-  },
-  "scripts": {
-    "clean": "npx rimraf ./dist/*",
-    "build": "npm run clean && rollup -c && node ./scripts/create-pkg.js",
-    "watch": "rollup -cw",
-    "deploy": "npm run build && cd dist && npm publish"
+  "dependencies": {
+    "@nativescript-community/ui-collectionview": "^5.3.42",
+    "@nativescript-community/ui-drawer": "^0.1.28",
+    "@nativescript-use/nativescript-localstorage": "^0.0.1",
+    "@nativescript/core": "~8.6.0",
+    "@nativescript/theme": "~3.0.2",
+    "nativescript-ui-listview": "^15.2.3",
+    "nativescript-ui-sidedrawer": "^15.2.3",
+    "svelte-native": "~1.0.9",
+    "svelte-native-nativescript-ui": "^1.0.0"
   },
   "devDependencies": {
-    "@nativescript/core": "~8.1.5",
-    "@nativescript/types": "~8.1.1",
-    "glob": "^7.1.3",
-    "nativescript-source-to-jsx-def": "../../svelte/nativescriptSourceToJsxDef",
-    "nativescript-ui-autocomplete": "~8.0.0",
-    "nativescript-ui-calendar": "~8.0.1",
-    "nativescript-ui-chart": "~9.0.0",
-    "nativescript-ui-dataform": "~8.0.0",
-    "nativescript-ui-gauge": "~8.0.0",
-    "nativescript-ui-listview": "~10.0.1",
-    "nativescript-ui-sidedrawer": "~10.0.1",
-    "rimraf": "^2.6.3",
-    "rollup": "^2.26.10",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-typescript2": "^0.27.2",
-    "svelte": "^3.44.0",
-    "svelte-native": "~1.0.0",
-    "typescript": "^4.4.4"
+    "@nativescript/preview-cli": "1.0.13",
+    "@nativescript/types": "~8.6.1",
+    "@nativescript/webpack": "~5.0.18",
+    "svelte": "~4.2.2",
+    "svelte-loader": "^3.1.9",
+    "svelte-native-preprocessor": "^1.0.0",
+    "svelte-preprocess": "^5.0.4",
+    "typescript": "~5.2.2"
   }
 }
